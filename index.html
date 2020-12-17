@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ca" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Concerts Musicaula</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="manifest" href="manifest.json">
+  </head>
+  <body class="dark-theme">
+    <header class="header">
+      <img class="header-logo" src="img/logo.svg">
+    </header>
+    <div class="app-content">
+      <section id="no-service-worker" class="message message--error" hidden>
+        <div class="message-icon">
+<svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24"><g><rect fill="none" height="24" width="24"/><rect fill="none" height="24" width="24"/></g><g><g><path d="M19,6v10.5l1.95,1.95C20.98,18.3,21,18.15,21,18V6c0-1.1-0.9-2-2-2H6.5l2,2H19z"/><path d="M3.86,3.95c-0.35-0.35-0.92-0.35-1.27,0c-0.35,0.35-0.35,0.92,0,1.27L3,5.64L3,18c0,1.1,0.9,2,2,2h12.36l1.42,1.42 c0.35,0.35,0.92,0.35,1.27,0c0.35-0.35,0.35-0.92,0-1.27L3.86,3.95z M5,18V7.64L15.36,18H5z"/></g></g></svg></div>
+        <h2 class="message-title">Oops!</h2>
+        <div class="message-text">El teu navegador no és compatible amb aquest web. Pots provar d'accedir amb l'última versió de Chrome, Firefox o Safari.</div>
+      </section>
+      <section id="wait-screen" class="message" hidden>
+        <div class="message-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM9.29 16.29L5.7 12.7c-.39-.39-.39-1.02 0-1.41.39-.39 1.02-.39 1.41 0L10 14.17l6.88-6.88c.39-.39 1.02-.39 1.41 0 .39.39.39 1.02 0 1.41l-7.59 7.59c-.38.39-1.02.39-1.41 0z"/></svg></div>
+        <h2 class="message-title">Tot llest!</h2>
+        <div class="message-text">Entra a aquesta pàgina quan comenci el concert per veure el programa.</div>
+      </section>
+      <section id="booklet" class="booklet" hidden>
+        <div class="booklet-header">
+          <h2 id="concert-title" class="booklet-header-title">Concert de Nadal 2020</h2>
+          <div id="concert-subtitle" class="booklet-header-subtitle">Joves i adults</div>
+        </div>
+        <div id="booklet-content" class="booklet-content">
+        </div>
+      </section>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>

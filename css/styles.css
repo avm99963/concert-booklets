@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', 'Arial', sans-serif;
+}
+
+[hidden] {
+  display: none;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-start;
+  position: fixed;
+  top: 0;
+  width: calc(100% - 16px);
+  padding: 8px 8px;
+  background-color: #f3f3f3;
+  box-shadow: black 0 -1px 4px;
+}
+
+.header .header-logo {
+  height: 42px;
+}
+
+.app-content {
+  max-width: min(calc(100% - 32px), 800px);
+  margin: 74px auto 16px auto;
+}
+
+.message {
+  text-align: center;
+}
+
+.message-icon {
+  display: inline-block;
+  width: 64px;
+  fill: #0277BD;
+}
+
+.message.message--error .message-icon {
+  fill: #D50000;
+}
+
+.message-title {
+  margin: 4px 0;
+}
+
+.message-text {
+  margin: 8px 0;
+}
+
+.booklet-header {
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.booklet-header .booklet-header-title {
+  margin: 0;
+  font-size: 30px;
+}
+
+.booklet-header .booklet-header-subtitle {
+  margin: 0;
+  font-size: 18px;
+}
+
+.song {
+  border: solid 1px gray;
+  border-radius: 3px;
+  padding: 12px;
+  margin-bottom: 18px;
+  box-shadow: #bdbdbd 0 1px 3px;
+}
+
+.song .song-title {
+  margin-top: 0;
+  margin-bottom: 4px;
+  font-size: 20px;
+}
+
+.song .song-author {
+  font-style: italic;
+  margin-bottom: 8px;
+}
+
+.song .performers .performers-item {
+  margin-bottom: 2px;
+}
+
+.song .performers .instrument {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+/* DARK THEME */
+@media screen {
+  .dark-theme {
+    background-color: #111;
+    color: white;
+  }
+
+  .dark-theme .header {
+    color: white;
+    background-color: #0c0c0c;
+    box-shadow: white 0 -1px 4px;
+  }
+
+  .dark-theme .header-logo {
+    filter: invert(1);
+  }
+
+  .dark-theme .song {
+    box-shadow: none;
+  }
+}
+
+@media print {
+  .header {
+    position: absolute;
+    box-shadow: none;
+    border-bottom: solid 1px gray;
+  }
+
+  .song {
+    break-inside: avoid-page;
+    box-shadow: none;
+  }
+}

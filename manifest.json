@@ -1,0 +1,14 @@
+{
+  "background_color": "#0043a9",
+  "display": "fullscreen",
+  "icons": [
+    {
+      "src": "img/icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "name": "Programa Concerts Musicaula",
+  "short_name": "Concert",
+  "start_url": "/"
+}
