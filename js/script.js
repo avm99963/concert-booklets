@@ -94,7 +94,7 @@ window.addEventListener('load', _ => {
 
           Promise.all(promises).then(booklets => {
             checkBooklets(booklets);
-            window.setTimeout(_ => { checkBooklets(booklets); }, 60 * 1000);
+            window.setInterval(_ => { checkBooklets(booklets); }, 60 * 1000);
           });
         })
         .catch(err => {
