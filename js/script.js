@@ -82,10 +82,18 @@ function checkBooklets(booklets) {
   }
 }
 
+function showUpdateFooter() {
+  document.getElementById('update-available').removeAttribute('hidden');
+}
+
 window.addEventListener('load', _ => {
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('/sw.js')
-        .then(_ => {
+        .then(reg => {
+          reg.addEventListener('updatefound', _ => {
+            showUpdateFooter();
+          });
+
           var promises = [];
           bookletNames.forEach(name => {
             var p = fetch('concerts/' + name + '.json').then(res => res.json());
