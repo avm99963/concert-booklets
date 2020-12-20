@@ -3,6 +3,7 @@ var bookletNames = [
   'nadal2020nens',
 ];
 
+var interval = null;
 var isBookletShown = false;
 
 function showSection(section) {
@@ -47,19 +48,60 @@ function songElement(song) {
   return div;
 }
 
-function loadBooklet(booklet) {
+function loadBooklet(booklet, showBackButton = false) {
   console.info('Booklet: ', booklet);
 
   document.getElementById('concert-title').textContent = booklet.title;
   document.getElementById('concert-subtitle').textContent = booklet.subtitle;
 
   var bookletContent = document.getElementById('booklet-content');
+  bookletContent.textContent = '';
   booklet.songs.forEach(song => {
     var songEl = songElement(song);
     bookletContent.append(songEl);
   });
 
   showSection('booklet');
+  if (showBackButton)
+    document.getElementById('previous-concerts-btn').removeAttribute('hidden');
+}
+
+function loadPreviousBookletsList(booklets) {
+  var now = Date.now();
+  var list = document.getElementById('previous-concerts-list');
+
+  var existsPreviousConcert = false;
+  booklets.forEach(booklet => {
+    if (booklet.ends * 1000 <= now) {
+      existsPreviousConcert = true;
+
+      var el = document.createElement('div');
+      el.classList.add('concert');
+
+      var title = document.createElement('div');
+      title.classList.add('concert-title');
+      title.textContent = booklet.title;
+
+      var subtitle = document.createElement('div');
+      subtitle.classList.add('concert-subtitle');
+      subtitle.textContent = booklet.subtitle;
+
+      var view = document.createElement('button');
+      view.classList.add('concert-btn', 'linkify');
+      view.textContent = 'Obre el programa';
+
+      el.append(title, subtitle, view);
+
+      el.addEventListener('click', _ => {
+        loadBooklet(booklet, true);
+      });
+
+      list.append(el);
+    }
+  });
+
+  if (existsPreviousConcert)
+    document.getElementById('previous-concerts-btn').removeAttribute('hidden');
 }
 
 function checkBooklets(booklets) {
@@ -69,15 +111,15 @@ function checkBooklets(booklets) {
   var now = Date.now();
   var latest = null;
   booklets.forEach(booklet => {
-    if (booklet.begins * 1000 <= now &&
-        (latest === null || booklet.begins * 1000 < booklet.begins))
+    if (booklet['begins'] * 1000 <= now && booklet['ends'] * 1000 >= now &&
+        (latest === null || latest['begins'] < booklet['begins']))
       latest = booklet;
   });
 
-  if (latest === null)
-    showSection('wait-screen');
-  else {
+  if (latest !== null) {
+    document.getElementById('previous-concerts-btn').setAttribute('hidden', '');
     loadBooklet(latest);
+    window.clearInterval(interval);
     isBookletShown = true;
   }
 }
@@ -87,6 +129,13 @@ function showUpdateFooter() {
 }
 
 window.addEventListener('load', _ => {
+  document.getElementById('previous-concerts-btn')
+      .addEventListener('click', e => {
+        showSection('previous-concerts');
+        document.getElementById('previous-concerts-btn')
+            .setAttribute('hidden', '');
+      });
+
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('/sw.js')
         .then(reg => {
@@ -101,8 +150,12 @@ window.addEventListener('load', _ => {
           });
 
           Promise.all(promises).then(booklets => {
+            showSection('wait-screen');
+            loadPreviousBookletsList(booklets);
             checkBooklets(booklets);
-            window.setInterval(_ => { checkBooklets(booklets); }, 60 * 1000);
+            interval = window.setInterval(_ => {
+              checkBooklets(booklets);
+            }, 15 * 1000);
           });
         })
         .catch(err => {

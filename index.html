@@ -9,7 +9,10 @@
   </head>
   <body class="dark-theme">
     <header class="header">
-      <img class="header-logo" src="img/logo.svg">
+      <div class="header-logo">
+        <img src="img/logo.svg">
+      </div>
+      <button id="previous-concerts-btn" class="primary-btn" hidden>Concerts anteriors</button>
     </header>
     <div class="app-content">
       <section id="no-service-worker" class="message message--error" hidden>
@@ -23,6 +26,10 @@
         <h2 class="message-title">Tot llest!</h2>
         <div class="message-text">S'ha baixat una còpia d'aquesta app al teu dispositiu i està disponible sense connexió a Internet.</div>
         <div class="message-text">Obre aquesta pàgina quan comenci el concert per veure el programa.</div>
+      </section>
+      <section id="previous-concerts" class="message" hidden>
+        <h2 class="message-title">Concerts anteriors</h2>
+        <div id="previous-concerts-list" class="concerts-list"></div>
       </section>
       <section id="booklet" class="booklet" hidden>
         <div class="booklet-header">
