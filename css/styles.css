@@ -258,5 +258,23 @@ button.primary-btn:active {
   .song {
     break-inside: avoid-page;
     box-shadow: none;
+    margin-bottom: 12px;
+    padding: 6px 12px;
+  }
+
+  .song .song-title {
+    margin-bottom: 3px;
+  }
+
+  .song .song-author {
+    margin-bottom: 6px;
+  }
+
+  .song .performers .performers-item {
+    margin-bottom: 1.5px;
+  }
+
+  #previous-concerts-btn {
+    display: none;
   }
 }
