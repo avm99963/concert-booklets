@@ -19,6 +19,7 @@ body {
   padding: 8px 8px;
   background-color: #f3f3f3;
   box-shadow: black 0 -1px 4px;
+  z-index: 100;
 }
 
 .header .header-logo {
@@ -37,6 +38,14 @@ body {
 .app-content {
   max-width: min(calc(100% - 32px), 800px);
   margin: 74px auto 16px auto;
+}
+
+.hero-message {
+  background: orange;
+  color: black;
+  border-radius: 4px;
+  padding: 16px;
+  margin-bottom: 16px;
 }
 
 .message {
@@ -77,11 +86,18 @@ body {
 }
 
 .song {
+  position: relative;
   border: solid 1px gray;
   border-radius: 3px;
   padding: 12px;
   margin-bottom: 18px;
   box-shadow: #bdbdbd 0 1px 3px;
+}
+
+.song .song-time {
+  position: absolute;
+  top: 12px;
+  right: 12px;
 }
 
 .song .song-title {

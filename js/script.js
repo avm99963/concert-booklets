@@ -15,9 +15,26 @@ function showSection(section) {
   });
 }
 
-function songElement(song) {
+function convertTime(time) {
+  var hour = Math.floor(time);
+  var totalMinutes = time*60;
+  var minutes = totalMinutes - hour*60;
+
+  return hour + ':' + minutes;
+}
+
+function songElement(song, hasTimes) {
   var div = document.createElement('div');
   div.classList.add('song');
+
+  if (hasTimes) {
+    var time = document.createElement('div');
+    time.classList.add('song-time');
+    console.log(song.begins);
+    time.textContent = convertTime(song.begins);
+
+    div.append(time);
+  }
 
   var title = document.createElement('h3');
   title.classList.add('song-title');
@@ -51,13 +68,20 @@ function songElement(song) {
 function loadBooklet(booklet, showBackButton = false) {
   console.info('Booklet: ', booklet);
 
+  var hasTimes = booklet.hasTimes;
+  if (hasTimes) {
+    booklet.songs.sort((a, b) => {
+      return a.begins - b.begins;
+    });
+  }
+
   document.getElementById('concert-title').textContent = booklet.title;
   document.getElementById('concert-subtitle').textContent = booklet.subtitle;
 
   var bookletContent = document.getElementById('booklet-content');
   bookletContent.textContent = '';
   booklet.songs.forEach(song => {
-    var songEl = songElement(song);
+    var songEl = songElement(song, hasTimes);
     bookletContent.append(songEl);
   });
 
