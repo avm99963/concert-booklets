@@ -5,6 +5,7 @@ var bookletNames = [
 
 var interval = null;
 var isBookletShown = false;
+var showAllConcerts = false;
 
 function showSection(section) {
   document.querySelectorAll('section').forEach(el => {
@@ -96,7 +97,7 @@ function loadPreviousBookletsList(booklets) {
 
   var existsPreviousConcert = false;
   booklets.forEach(booklet => {
-    if (booklet.ends * 1000 <= now) {
+    if (showAllConcerts || booklet.ends * 1000 <= now) {
       existsPreviousConcert = true;
 
       var el = document.createElement('div');
@@ -159,6 +160,10 @@ window.addEventListener('load', _ => {
         document.getElementById('previous-concerts-btn')
             .setAttribute('hidden', '');
       });
+
+  var searchParams = new URLSearchParams(location.search);
+  if (searchParams.has('showAllConcerts'))
+    showAllConcerts = true;
 
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('/sw.js')
