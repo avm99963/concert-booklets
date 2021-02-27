@@ -1,4 +1,4 @@
-// Version: 1.0.9
+// Version: 1.1.0
 var CACHE_NAME = 'all-v1';
 var urlsToCache = [
   '/',
@@ -7,6 +7,7 @@ var urlsToCache = [
   '/js/script.js',
   '/concerts/nadal2020joves.json',
   '/concerts/nadal2020nens.json',
+  '/concerts/ciba2021.json',
 ];
 
 self.addEventListener('install', event => {

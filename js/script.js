@@ -1,6 +1,7 @@
 var bookletNames = [
-  'nadal2020joves',
+  'ciba2021',
   'nadal2020nens',
+  'nadal2020joves',
 ];
 
 var interval = null;
