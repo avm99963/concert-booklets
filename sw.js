@@ -1,4 +1,4 @@
-// Version: 1.1.0
+// Version: 1.1.1
 var CACHE_NAME = 'all-v1';
 var urlsToCache = [
   '/',

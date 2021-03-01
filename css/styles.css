@@ -208,6 +208,7 @@ button.primary-btn:active {
 .concert-subtitle {
   margin: 0 0 32px;
   flex-grow: 1;
+  line-height: initial;
 }
 
 .linkify {
