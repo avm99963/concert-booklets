@@ -79,6 +79,13 @@ function loadBooklet(booklet, showBackButton = false) {
   document.getElementById('concert-title').textContent = booklet.title;
   document.getElementById('concert-subtitle').textContent = booklet.subtitle;
 
+  if ('customHeader' in booklet)
+    document.getElementById('booklet-custom-header').innerHTML =
+        booklet.customHeader;
+  if ('customFooter' in booklet)
+    document.getElementById('booklet-custom-footer').innerHTML =
+        booklet.customFooter;
+
   var bookletContent = document.getElementById('booklet-content');
   bookletContent.textContent = '';
   booklet.songs.forEach(song => {
