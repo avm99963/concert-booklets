@@ -182,33 +182,35 @@ window.addEventListener('load', _ => {
   if (searchParams.has('concert'))
     forceConcert = searchParams.get('concert');
 
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/sw.js')
-        .then(reg => {
-          reg.addEventListener('updatefound', _ => {
-            showUpdateFooter();
-          });
+  if (!searchParams.has('noServiceWorker')) {
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/sw.js')
+          .then(reg => {
+            reg.addEventListener('updatefound', _ => {
+              showUpdateFooter();
+            });
 
-          var promises = [];
-          bookletNames.forEach(name => {
-            var p = fetch('concerts/' + name + '.json').then(res => res.json());
-            promises.push(p);
-          });
+            var promises = [];
+            bookletNames.forEach(name => {
+              var p = fetch('concerts/' + name + '.json').then(res => res.json());
+              promises.push(p);
+            });
 
-          Promise.all(promises).then(booklets => {
-            showSection('wait-screen');
-            loadPreviousBookletsList(booklets);
-            checkBooklets(booklets);
-            interval = window.setInterval(_ => {
+            Promise.all(promises).then(booklets => {
+              showSection('wait-screen');
+              loadPreviousBookletsList(booklets);
               checkBooklets(booklets);
-            }, 15 * 1000);
+              interval = window.setInterval(_ => {
+                checkBooklets(booklets);
+              }, 15 * 1000);
+            });
+          })
+          .catch(err => {
+            showSection('cant-install');
+            console.error('The service worker failed to be registered.');
           });
-        })
-        .catch(err => {
-          showSection('cant-install');
-          console.error('The service worker failed to be registered.');
-        });
-  } else {
-    showSection('no-service-worker');
+    } else {
+      showSection('no-service-worker');
+    }
   }
 });
