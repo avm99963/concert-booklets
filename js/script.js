@@ -7,6 +7,7 @@ var bookletNames = [
 var interval = null;
 var isBookletShown = false;
 var showAllConcerts = false;
+var forceConcert = null;
 
 function showSection(section) {
   document.querySelectorAll('section').forEach(el => {
@@ -143,11 +144,17 @@ function checkBooklets(booklets) {
 
   var now = Date.now();
   var latest = null;
-  booklets.forEach(booklet => {
-    if (booklet['begins'] * 1000 <= now && booklet['ends'] * 1000 >= now &&
-        (latest === null || latest['begins'] < booklet['begins']))
+  for (var booklet of booklets) {
+    if (forceConcert !== null && ('codename' in booklet) &&
+        booklet['codename'] == forceConcert) {
       latest = booklet;
-  });
+      break;
+    }
+
+    if (booklet['begins'] * 1000 <= now && booklet['ends'] * 1000 >= now &&
+        (latest === null || latest['begins'] < booklet['begins']))
+      latest = booklet;
+  }
 
   if (latest !== null) {
     document.getElementById('previous-concerts-btn').setAttribute('hidden', '');
@@ -172,6 +179,8 @@ window.addEventListener('load', _ => {
   var searchParams = new URLSearchParams(location.search);
   if (searchParams.has('showAllConcerts'))
     showAllConcerts = true;
+  if (searchParams.has('concert'))
+    forceConcert = searchParams.get('concert');
 
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('/sw.js')
