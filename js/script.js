@@ -168,6 +168,23 @@ function showUpdateFooter() {
   document.getElementById('update-available').removeAttribute('hidden');
 }
 
+function initBooklets() {
+  var promises = [];
+  bookletNames.forEach(name => {
+    var p = fetch('concerts/' + name + '.json').then(res => res.json());
+    promises.push(p);
+  });
+
+  Promise.all(promises).then(booklets => {
+    showSection('wait-screen');
+    loadPreviousBookletsList(booklets);
+    checkBooklets(booklets);
+    interval = window.setInterval(_ => {
+      checkBooklets(booklets);
+    }, 15 * 1000);
+  });
+}
+
 window.addEventListener('load', _ => {
   document.getElementById('previous-concerts-btn')
       .addEventListener('click', e => {
@@ -189,24 +206,15 @@ window.addEventListener('load', _ => {
             showUpdateFooter();
           });
 
-          var promises = [];
-          bookletNames.forEach(name => {
-            var p = fetch('concerts/' + name + '.json').then(res => res.json());
-            promises.push(p);
-          });
-
-          Promise.all(promises).then(booklets => {
-            showSection('wait-screen');
-            loadPreviousBookletsList(booklets);
-            checkBooklets(booklets);
-            interval = window.setInterval(_ => {
-              checkBooklets(booklets);
-            }, 15 * 1000);
-          });
+          initBooklets();
         })
         .catch(err => {
-          showSection('cant-install');
-          console.error('The service worker failed to be registered.');
+          if (searchParams.has('optionalSW')) {
+            initBooklets();
+          } else {
+            showSection('cant-install');
+            console.error('The service worker failed to be registered.');
+          }
         });
   } else {
     showSection('no-service-worker');
