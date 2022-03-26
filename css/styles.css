@@ -75,6 +75,10 @@ body {
   margin-bottom: 18px;
 }
 
+.booklet-header--invisible {
+  display: none;
+}
+
 .booklet-header .booklet-header-title {
   margin: 0;
   font-size: 30px;
@@ -270,6 +274,14 @@ button.primary-btn:active {
     position: absolute;
     box-shadow: none;
     border-bottom: solid 1px gray;
+  }
+
+  .booklet-header--invisible {
+    display: block;
+  }
+
+  .booklet-custom-header {
+    display: none;
   }
 
   .song {

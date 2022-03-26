@@ -1,10 +1,11 @@
-var CACHE_NAME = 'all-v1.1.8';
+var CACHE_NAME = 'all-v1.1.9';
 var urlsToCache = [
   '/',
   '/css/styles.css',
   '/img/logo.svg',
   '/img/logo-biblioteca.png',
   '/img/logo-ciba.png',
+  '/img/cartells/cant2022.webp',
   '/js/script.js',
   '/concerts/nadal2020joves.json',
   '/concerts/nadal2020nens.json',

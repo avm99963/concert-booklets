@@ -81,6 +81,12 @@ function loadBooklet(booklet, showBackButton = false) {
   document.getElementById('concert-title').textContent = booklet.title;
   document.getElementById('concert-subtitle').textContent = booklet.subtitle;
 
+  if (!booklet?.showTitle)
+    document.getElementById('booklet-header').classList
+        .add('booklet-header--invisible');
+  else
+    document.getElementById('booklet-header').classList
+        .remove('booklet-header--invisible');
   if ('customHeader' in booklet)
     document.getElementById('booklet-custom-header').innerHTML =
         booklet.customHeader;

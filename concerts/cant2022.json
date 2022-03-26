@@ -5,6 +5,8 @@
   "begins": 1648740600,
   "ends": 1648764000,
   "hasTimes": false,
+  "showTitle": false,
+  "customHeader": "<div style='text-align: center; margin: 16px 0;'><img src='img/cartells/cant2022.webp' style='max-width: min(100%, 512px);'></div>",
   "customFooter": "<div style='text-align: right; margin: 16px 0;'><img src='img/logo-biblioteca.png' style='height: 75px;'></div>",
   "songs": [
     {
