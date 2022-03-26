@@ -34,7 +34,6 @@ function songElement(song, hasTimes) {
   if (hasTimes) {
     var time = document.createElement('div');
     time.classList.add('song-time');
-    console.log(song.begins);
     time.textContent = convertTime(song.begins);
 
     div.append(time);
@@ -85,9 +84,13 @@ function loadBooklet(booklet, showBackButton = false) {
   if ('customHeader' in booklet)
     document.getElementById('booklet-custom-header').innerHTML =
         booklet.customHeader;
+  else
+    document.getElementById('booklet-custom-header').textContent = '';
   if ('customFooter' in booklet)
     document.getElementById('booklet-custom-footer').innerHTML =
         booklet.customFooter;
+  else
+    document.getElementById('booklet-custom-footer').textContent = '';
 
   var bookletContent = document.getElementById('booklet-content');
   bookletContent.textContent = '';
