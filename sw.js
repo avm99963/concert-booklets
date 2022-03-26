@@ -1,13 +1,15 @@
-var CACHE_NAME = 'all-v1.1.6';
+var CACHE_NAME = 'all-v1.1.7';
 var urlsToCache = [
   '/',
   '/css/styles.css',
   '/img/logo.svg',
+  '/img/logo-biblioteca.png',
   '/img/logo-ciba.png',
   '/js/script.js',
   '/concerts/nadal2020joves.json',
   '/concerts/nadal2020nens.json',
   '/concerts/ciba2021.json',
+  '/concerts/cant2022.json',
 ];
 
 self.addEventListener('install', event => {

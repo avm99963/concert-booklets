@@ -1,4 +1,5 @@
 var bookletNames = [
+  'cant2022',
   'ciba2021',
   'nadal2020nens',
   'nadal2020joves',

@@ -1,0 +1,229 @@
+{
+  "codename": "cant2022",
+  "title": "Concert de Cant",
+  "subtitle": "Sala Salvador Cabré - Biblioteca de Singuerlín - 31 de març del 2022",
+  "begins": 1648740600,
+  "ends": 1648764000,
+  "hasTimes": false,
+  "customFooter": "<div style='text-align: right; margin: 16px 0;'><img src='img/logo-biblioteca.png' style='height: 75px;'></div>",
+  "songs": [
+    {
+      "title": "We Are The World",
+      "author": "Michael Jackson",
+      "performers": [
+        {
+          "instrument": "Veus",
+          "names": ["Joel Arbó", "David Ballester", "Maria Bejarano", "Noa Chacón", "Karolyne Calizaya", "Diego Castro", "Inés Garrido", "Eire Navarro", "Lluna Rimbau", "Yrina Rodrigues", "Carmen Vilanova", "Gabi Villalba"]
+        },
+        {
+          "instrument": "Piano",
+          "names": ["Tesi Osuna"]
+        },
+        {
+          "instrument": "Guitarra",
+          "names": ["Pablo Jiménez"]
+        },
+        {
+          "instrument": "Bateria",
+          "names": ["Xavi Martín"]
+        }
+      ]
+    },
+    {
+      "title": "Easy on me",
+      "author": "Adele",
+      "performers": [
+        {
+          "instrument": "Veu",
+          "names": ["Noa Chacón"]
+        },
+        {
+          "instrument": "Piano",
+          "names": ["Laura Matencio"]
+        },
+        {
+          "instrument": "Violí",
+          "names": ["Carmen Vilanova"]
+        }
+      ]
+    },
+    {
+      "title": "Wake up",
+      "author": "Julie and the Phantoms",
+      "performers": [
+        {
+          "instrument": "Veus",
+          "names": ["Joel Arbó", "Inés Garrido", "Eire Navarro", "Yrina Rodrigues"]
+        },
+        {
+          "instrument": "Piano",
+          "names": ["Tesi Osuna"]
+        },
+        {
+          "instrument": "Guitarra",
+          "names": ["Pablo Jiménez"]
+        },
+        {
+          "instrument": "Bateria",
+          "names": ["Xavi Martín"]
+        }
+      ]
+    },
+    {
+      "title": "Creo en mí",
+      "author": "Natalia Jiménez",
+      "performers": [
+        {
+          "instrument": "Veu",
+          "names": ["Yrina Rodrigues"]
+        },
+        {
+          "instrument": "Piano",
+          "names": ["Tesi Osuna"]
+        },
+        {
+          "instrument": "Guitarra",
+          "names": ["Pablo Jiménez"]
+        },
+        {
+          "instrument": "Bateria",
+          "names": ["Xavi Martín"]
+        }
+      ]
+    },
+    {
+      "title": "Take me to church",
+      "author": "Hozier",
+      "performers": [
+        {
+          "instrument": "Veus",
+          "names": ["David Ballester", "Diego Castro", "Gabi Villalba"]
+        },
+        {
+          "instrument": "Guitarra",
+          "names": ["Pablo Jiménez"]
+        },
+        {
+          "instrument": "Piano",
+          "names": ["Tesi Osuna", "Laura Matencio"]
+        },
+        {
+          "instrument": "Bateria",
+          "names": ["Xavi Martín"]
+        }
+      ]
+    },
+    {
+      "title": "Hores d'amor (Seasons of Love)",
+      "author": "Jonathan Larson (musical Rent)",
+      "performers": [
+        {
+          "instrument": "Veus",
+          "names": ["Maria Bejarano", "Karolyne Calizaya", "Noa Chacón", "Lluna Rimbau"]
+        },
+        {
+          "instrument": "Piano",
+          "names": ["Tesi Osuna", "Laura Matencio"]
+        },
+        {
+          "instrument": "Guitarra",
+          "names": ["Pablo Jiménez"]
+        },
+        {
+          "instrument": "Bateria",
+          "names": ["Xavi Martín"]
+        }
+      ]
+    },
+    {
+      "title": "Vas a quedarte",
+      "author": "Aitana",
+      "performers": [
+        {
+          "instrument": "Veus",
+          "names": ["María Bejarano", "Karolyne Calizaya"]
+        },
+        {
+          "instrument": "Piano",
+          "names": ["Laura Matencio"]
+        },
+        {
+          "instrument": "Violí",
+          "names": ["Carmen Vilanova"]
+        }
+      ]
+    },
+    {
+      "title": "Miedo",
+      "author": "M-Clan (versió OT)",
+      "performers": [
+        {
+          "instrument": "Veus",
+          "names": ["David Ballester", "Lluna Rimbau"]
+        },
+        {
+          "instrument": "Piano",
+          "names": ["Tesi Osuna"]
+        }
+      ]
+    },
+    {
+      "title": "Somewhere Over the Rainbow",
+      "author": "Harold Arlen (versió d'Ariana Grande)",
+      "performers": [
+        {
+          "instrument": "Veus",
+          "names": ["Carmen Vilanova"]
+        },
+        {
+          "instrument": "Piano",
+          "names": ["Laura Matencio"]
+        }
+      ]
+    },
+    {
+      "title": "Across the Universe",
+      "author": "The Beatles",
+      "performers": [
+        {
+          "instrument": "Veus",
+          "names": ["Joel Arbó", "David Ballester", "María Bejarano", "Noa Chacón", "Karolyne Calizaya", "Diego Castro", "Inés Garrido", "Eire Navarro", "Lluna Rimbau", "Yrina Rodrígues", "Carmen Vilanova", "Gabi Villalba"]
+        },
+        {
+          "instrument": "Piano",
+          "names": ["Nath Cruz", "Jazmín Tempo"]
+        },
+        {
+          "instrument": "Guitarres",
+          "names": ["Jesús Floro", "Pablo Jiménez"]
+        },
+        {
+          "instrument": "Bateria",
+          "names": ["Xavi Martín"]
+        }
+      ]
+    },
+    {
+      "title": "Sempre t'esperarà",
+      "author": "Escola de Música Musicaula (cançó guanyadora del concurs supermusics de TV3)",
+      "performers": [
+        {
+          "instrument": "Veus",
+          "names": ["Joel Arbó", "David Ballester", "María Bejarano", "Noa Chacón", "Karolyne Calizaya", "Diego Castro", "Inés Garrido", "Eire Navarro", "Lluna Rimbau", "Yrina Rodrígues", "Carmen Vilanova", "Gabi Villalba"]
+        },
+        {
+          "instrument": "Piano",
+          "names": ["Carme Martínez"]
+        },
+        {
+          "instrument": "Guitarra",
+          "names": ["Pablo Jiménez"]
+        },
+        {
+          "instrument": "Violí",
+          "names": ["Carmen Vilanova"]
+        }
+      ]
+    }
+  ]
+}
