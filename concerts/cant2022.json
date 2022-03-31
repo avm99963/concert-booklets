@@ -26,6 +26,10 @@
           "names": ["Pablo Jiménez"]
         },
         {
+          "instrument": "Baix",
+          "names": ["Gabriel Villalba"]
+        },
+        {
           "instrument": "Bateria",
           "names": ["Xavi Martín"]
         }
@@ -46,6 +50,42 @@
         {
           "instrument": "Violí",
           "names": ["Carmen Vilanova"]
+        }
+      ]
+    },
+    {
+      "title": "Hores d'amor (Seasons of Love)",
+      "author": "Jonathan Larson (musical Rent)",
+      "performers": [
+        {
+          "instrument": "Veus",
+          "names": ["Maria Bejarano", "Karolyne Calizaya", "Noa Chacón", "Lluna Rimbau"]
+        },
+        {
+          "instrument": "Piano",
+          "names": ["Tesi Osuna", "Laura Matencio"]
+        },
+        {
+          "instrument": "Guitarra",
+          "names": ["Pablo Jiménez"]
+        },
+        {
+          "instrument": "Bateria",
+          "names": ["Xavi Martín"]
+        }
+      ]
+    },
+    {
+      "title": "Somewhere Over the Rainbow",
+      "author": "Harold Arlen (versió d'Ariana Grande)",
+      "performers": [
+        {
+          "instrument": "Veus",
+          "names": ["Carmen Vilanova"]
+        },
+        {
+          "instrument": "Piano",
+          "names": ["Laura Matencio"]
         }
       ]
     },
@@ -110,26 +150,8 @@
           "names": ["Tesi Osuna", "Laura Matencio"]
         },
         {
-          "instrument": "Bateria",
-          "names": ["Xavi Martín"]
-        }
-      ]
-    },
-    {
-      "title": "Hores d'amor (Seasons of Love)",
-      "author": "Jonathan Larson (musical Rent)",
-      "performers": [
-        {
-          "instrument": "Veus",
-          "names": ["Maria Bejarano", "Karolyne Calizaya", "Noa Chacón", "Lluna Rimbau"]
-        },
-        {
-          "instrument": "Piano",
-          "names": ["Tesi Osuna", "Laura Matencio"]
-        },
-        {
-          "instrument": "Guitarra",
-          "names": ["Pablo Jiménez"]
+          "instrument": "Baix",
+          "names": ["Gabriel Villalba"]
         },
         {
           "instrument": "Bateria",
@@ -166,20 +188,6 @@
         {
           "instrument": "Piano",
           "names": ["Tesi Osuna"]
-        }
-      ]
-    },
-    {
-      "title": "Somewhere Over the Rainbow",
-      "author": "Harold Arlen (versió d'Ariana Grande)",
-      "performers": [
-        {
-          "instrument": "Veus",
-          "names": ["Carmen Vilanova"]
-        },
-        {
-          "instrument": "Piano",
-          "names": ["Laura Matencio"]
         }
       ]
     },
