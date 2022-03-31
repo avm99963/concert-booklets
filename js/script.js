@@ -81,7 +81,7 @@ function loadBooklet(booklet, showBackButton = false) {
   document.getElementById('concert-title').textContent = booklet.title;
   document.getElementById('concert-subtitle').textContent = booklet.subtitle;
 
-  if (!booklet?.showTitle)
+  if (booklet?.showTitle === false)
     document.getElementById('booklet-header').classList
         .add('booklet-header--invisible');
   else
