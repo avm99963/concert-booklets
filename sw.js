@@ -36,9 +36,14 @@ self.addEventListener('activate', event => {
 
 self.addEventListener('fetch', event => {
   event.respondWith(
-    caches.match(event.request).then(response => {
-      if (response) return response;
-      return fetch(event.request);
+    caches.open(CACHE_NAME).then(cache => {
+      return caches.match(event.request).then(response => {
+        if (response) return response;
+        return fetch(event.request);
+      }).catch(() => {
+        // Load a fallback version of the file if everything failed.
+        return caches.match(event.request);
+      });
     })
   );
 });
