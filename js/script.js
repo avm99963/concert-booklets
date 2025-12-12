@@ -11,6 +11,7 @@ var showAllConcerts = false;
 var forceConcert = null;
 
 function showSection(section) {
+  window.scrollTo(0, 0);
   document.querySelectorAll('section').forEach(el => {
     if (el.id === section)
       el.removeAttribute('hidden');
