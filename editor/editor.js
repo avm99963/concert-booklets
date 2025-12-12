@@ -173,13 +173,6 @@ function renderSongs() {
                 const chipsContainer = perfEl.querySelector(`#chips-${songIndex}-${perfIndex}`);
                 const inputEl = perfEl.querySelector('.chip-input');
 
-                // Focus input when clicking the container area
-                chipsContainer.addEventListener('click', (e) => {
-                    if (e.target === chipsContainer) {
-                        inputEl.focus();
-                    }
-                });
-
                 // Render Chips
                 (perf.names || []).forEach((name, nameIndex) => {
                     const chip = document.createElement('div');
