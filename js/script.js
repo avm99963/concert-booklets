@@ -187,7 +187,6 @@ function initBooklets() {
   });
 
   Promise.all(promises).then(booklets => {
-    showSection('wait-screen');
     loadPreviousBookletsList(booklets);
     checkBooklets(booklets);
     interval = window.setInterval(_ => {
@@ -213,6 +212,25 @@ window.addEventListener('load', _ => {
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('/sw.js')
         .then(reg => {
+          // Check for first install
+          if (!navigator.serviceWorker.controller) {
+            if (reg.installing) {
+               const installingWorker = reg.installing;
+               showSection('downloading-screen');
+               installingWorker.addEventListener('statechange', (e) => {
+                 if (e.target.state === 'installed') {
+                   showSection('wait-screen');
+                 }
+               });
+            } else {
+               // SW might be active/waiting already? 
+               showSection('wait-screen');
+            }
+          } else {
+            // Repeat visit
+            showSection('wait-screen');
+          }
+
           reg.addEventListener('updatefound', _ => {
             const newWorker = reg.installing;
             newWorker.addEventListener('statechange', () => {
@@ -227,6 +245,7 @@ window.addEventListener('load', _ => {
         .catch(err => {
           if (searchParams.has('optionalSW')) {
             initBooklets();
+            showSection('wait-screen'); // Fallback
           } else {
             showSection('cant-install');
             console.error('The service worker failed to be registered.');
