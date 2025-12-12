@@ -1,11 +1,7 @@
-var CACHE_NAME = 'all-v1.1.17';
+var CACHE_NAME = 'all-v1.1.18';
 // keep-sorted
 var urlsToCache = [
   '/',
-  '/concerts/cant2022.json',
-  '/concerts/ciba2021.json',
-  '/concerts/nadal2020joves.json',
-  '/concerts/nadal2020nens.json',
   '/css/styles.css',
   '/editor/editor.css',
   '/editor/editor.html',
