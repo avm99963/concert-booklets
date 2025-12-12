@@ -213,7 +213,12 @@ window.addEventListener('load', _ => {
     navigator.serviceWorker.register('/sw.js')
         .then(reg => {
           reg.addEventListener('updatefound', _ => {
-            showUpdateFooter();
+            const newWorker = reg.installing;
+            newWorker.addEventListener('statechange', () => {
+              if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+                showUpdateFooter();
+              }
+            });
           });
 
           initBooklets();
