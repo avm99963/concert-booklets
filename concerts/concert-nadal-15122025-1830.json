@@ -1,0 +1,101 @@
+{
+  "codename": "concert-nadal-15122025-1830",
+  "title": "CONCERT DE NADAL",
+  "subtitle": "Dilluns 15 de desembre de 2025 a les 18:30 hores - Auditori Escola de Música Musicaula",
+  "begins": 1765818900,
+  "ends": 1765836000,
+  "hasTimes": false,
+  "showTitle": true,
+  "songs": [
+    {
+      "title": "Jingle Bells",
+      "author": "James Lord Pierpont",
+      "performers": [
+        {
+          "instrument": "Guitarra",
+          "names": [
+            "Yeraly Barros",
+            "Daniela Carmona",
+            "Carlota de Haro",
+            "Iván Hernández",
+            "Daniel Huang",
+            "Zhihan Liu",
+            "Martín Muti",
+            "Vera Villanueva"
+          ]
+        },
+        {
+          "instrument": "Bateria",
+          "names": [
+            "Daniel Cuevas"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Fum, fum, fum",
+      "author": "Popular catalana",
+      "performers": [
+        {
+          "instrument": "Piano",
+          "names": [
+            "Samantha Chumpitaz",
+            "Carme Martínez"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Les campanes",
+      "author": "Popular",
+      "performers": [
+        {
+          "instrument": "Piano",
+          "names": [
+            "Tesi Osuna",
+            "William Aaron Sandovalín"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mary had a little lamb",
+      "author": "Popular nordamericana",
+      "performers": [
+        {
+          "instrument": "Piano",
+          "names": [
+            "Zoe Montero",
+            "Tesi Osuna"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Yankie Doodle",
+      "author": "Popular nordamericana",
+      "performers": [
+        {
+          "instrument": "Piano",
+          "names": [
+            "Izan Montero",
+            "Tesi Osuna"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Jingle Bells",
+      "author": "James Lord Pierpont",
+      "performers": [
+        {
+          "instrument": "Piano",
+          "names": [
+            "Samantha Chumpitaz",
+            "Laia Yllescas"
+          ]
+        }
+      ]
+    }
+  ]
+}
