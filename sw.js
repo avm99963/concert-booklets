@@ -1,4 +1,4 @@
-var CACHE_NAME = 'all-v1.1.16';
+var CACHE_NAME = 'all-v1.1.17';
 // keep-sorted
 var urlsToCache = [
   '/',
@@ -11,12 +11,14 @@ var urlsToCache = [
   '/editor/editor.html',
   '/editor/editor.js',
   '/img/cartells/cant2022.webp',
+  '/img/icon.png',
   '/img/logo-biblioteca.png',
   '/img/logo-ciba.png',
   '/img/logo.svg',
   // Explicitly cache index.html so it works if users access /index.html directly
   '/index.html',
   '/js/script.js',
+  '/manifest.json',
   '/third_party/Sortable.min.js',
 ];
 
