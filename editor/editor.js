@@ -165,7 +165,11 @@ function renderSongs() {
                         <label>Noms (Escriu i prem Retorn o Coma)</label>
                         <div class="chip-container" id="chips-${songIndex}-${perfIndex}">
                             <!-- Chips go here -->
-                            <input type="text" class="chip-input" placeholder="Afegir nom..." onkeydown="handleChipInput(event, ${songIndex}, ${perfIndex})">
+                            <input type="text" 
+                                   class="chip-input" 
+                                   placeholder="Afegir nom..." 
+                                   onkeydown="handleChipInput(event, ${songIndex}, ${perfIndex})"
+                                   onpaste="handleChipPaste(event, ${songIndex}, ${perfIndex})">
                         </div>
                     </div>
                 `;
@@ -313,6 +317,26 @@ function removePerformer(songIndex, perfIndex) {
     renderSongs();
 }
 
+function updateChipsDOM(container, inputEl, songIndex, perfIndex) {
+    const performer = concert.songs[songIndex].performers[perfIndex];
+    
+    // Remove existing chips
+    const existingChips = container.querySelectorAll('.chip');
+    existingChips.forEach(chip => chip.remove());
+
+    // Re-render sorted chips
+    performer.names.forEach((name, nameIndex) => {
+        const chip = document.createElement('div');
+        chip.className = 'chip';
+        chip.dataset.index = nameIndex;
+        chip.innerHTML = `
+            ${escapeHtml(name)}
+            <span class="remove-chip" onclick="removeName(${songIndex}, ${perfIndex}, ${nameIndex})">&times;</span>
+        `;
+        container.insertBefore(chip, inputEl);
+    });
+}
+
 function handleChipInput(event, songIndex, perfIndex) {
     if (event.key === 'Enter' || event.key === ',') {
         event.preventDefault();
@@ -324,29 +348,35 @@ function handleChipInput(event, songIndex, perfIndex) {
             sortNames(performer.names);
 
             // Granular DOM Update
-            const inputEl = event.target;
-            const container = inputEl.parentElement;
-            
-            // Remove existing chips
-            const existingChips = container.querySelectorAll('.chip');
-            existingChips.forEach(chip => chip.remove());
+            updateChipsDOM(event.target.parentElement, event.target, songIndex, perfIndex);
 
-            // Re-render sorted chips
-            performer.names.forEach((name, nameIndex) => {
-                const chip = document.createElement('div');
-                chip.className = 'chip';
-                chip.dataset.index = nameIndex;
-                chip.innerHTML = `
-                    ${escapeHtml(name)}
-                    <span class="remove-chip" onclick="removeName(${songIndex}, ${perfIndex}, ${nameIndex})">&times;</span>
-                `;
-                container.insertBefore(chip, inputEl);
-            });
-
-            inputEl.value = '';
+            event.target.value = '';
             markDirty();
             // renderSongs() is NOT called, so inputEl remains in DOM and focused
         }
+    }
+}
+
+function handleChipPaste(event, songIndex, perfIndex) {
+    event.preventDefault();
+    const paste = (event.clipboardData || window.clipboardData).getData('text');
+    const names = paste.split(',');
+    
+    const performer = concert.songs[songIndex].performers[perfIndex];
+    let added = false;
+
+    names.forEach(name => {
+        const val = name.trim();
+        if (val) {
+            performer.names.push(val);
+            added = true;
+        }
+    });
+
+    if (added) {
+        sortNames(performer.names);
+        updateChipsDOM(event.target.parentElement, event.target, songIndex, perfIndex);
+        markDirty();
     }
 }
 
