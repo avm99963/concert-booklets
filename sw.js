@@ -1,4 +1,4 @@
-var CACHE_NAME = 'all-v1.1.18';
+var CACHE_NAME = 'all-v1.1.19';
 // keep-sorted
 var urlsToCache = [
   '/',

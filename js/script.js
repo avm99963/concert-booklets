@@ -214,7 +214,7 @@ window.addEventListener('load', _ => {
                const installingWorker = reg.installing;
                showSection('downloading-screen');
                installingWorker.addEventListener('statechange', (e) => {
-                 if (e.target.state === 'installed') {
+                 if (e.target.state === 'installed' && !isBookletShown) {
                    showSection('wait-screen');
                  }
                });
