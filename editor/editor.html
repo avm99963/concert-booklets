@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor de Programes de Concert</title>
+    <link rel="stylesheet" href="editor.css">
+    <!-- SortableJS for Drag and Drop -->
+    <script src="../third_party/Sortable.min.js"></script>
+</head>
+<body>
+
+    <div class="editor-container">
+        <div class="header">
+            <h1>Editor de Concerts</h1>
+            <div>
+                <input type="file" id="file-input" class="hidden" accept=".json" onchange="handleFileSelect(event)">
+                <button class="btn btn-secondary" onclick="triggerImport()">Importar JSON</button>
+                <button class="btn" onclick="exportJSON()">Exportar JSON</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="form-group">
+                <label for="codename">Nom en clau (Nom del fitxer)</label>
+                <input type="text" id="codename" oninput="updateMetadata('codename', this.value)" placeholder="p. ex., cant2025">
+            </div>
+            <div class="form-group">
+                <label for="title">Títol del Concert</label>
+                <input type="text" id="title" oninput="updateMetadata('title', this.value)" placeholder="p. ex., Concert de Primavera">
+            </div>
+            <div class="form-group">
+                <label for="subtitle">Subtítol</label>
+                <input type="text" id="subtitle" oninput="updateMetadata('subtitle', this.value)" placeholder="p. ex., Sala Principal - 12 Des 2025">
+            </div>
+            <div class="row">
+                <div class="col form-group">
+                    <label for="begins">Inici</label>
+                    <input type="datetime-local" id="begins" onchange="updateMetadata('begins', this.value)">
+                </div>
+                <div class="col form-group">
+                    <label for="ends">Final</label>
+                    <input type="datetime-local" id="ends" onchange="updateMetadata('ends', this.value)">
+                </div>
+            </div>
+        </div>
+
+        <h2>Cançons</h2>
+        <div class="controls-row">
+            <button class="btn btn-secondary" onclick="expandAllSongs()">Expandir Totes</button>
+            <button class="btn btn-secondary" onclick="collapseAllSongs()">Col·lapsar Totes</button>
+        </div>
+        <div id="songs-container" class="song-list">
+            <!-- Songs will be rendered here -->
+        </div>
+
+        <div class="add-song-container">
+            <button class="btn btn-add-song" onclick="addSong()">+ Afegir Cançó</button>
+        </div>
+    </div>
+
+    <script src="editor.js"></script>
+</body>
+</html>

@@ -1,16 +1,21 @@
-var CACHE_NAME = 'all-v1.1.11';
+var CACHE_NAME = 'all-v1.1.12';
+// keep-sorted
 var urlsToCache = [
   '/',
-  '/css/styles.css',
-  '/img/logo.svg',
-  '/img/logo-biblioteca.png',
-  '/img/logo-ciba.png',
-  '/img/cartells/cant2022.webp',
-  '/js/script.js',
+  '/concerts/cant2022.json',
+  '/concerts/ciba2021.json',
   '/concerts/nadal2020joves.json',
   '/concerts/nadal2020nens.json',
-  '/concerts/ciba2021.json',
-  '/concerts/cant2022.json',
+  '/css/styles.css',
+  '/editor/editor.css',
+  '/editor/editor.html',
+  '/editor/editor.js',
+  '/img/cartells/cant2022.webp',
+  '/img/logo-biblioteca.png',
+  '/img/logo-ciba.png',
+  '/img/logo.svg',
+  '/js/script.js',
+  '/third_party/Sortable.min.js',
 ];
 
 self.addEventListener('install', event => {
