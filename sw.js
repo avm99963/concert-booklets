@@ -1,4 +1,4 @@
-var CACHE_NAME = 'all-v1.1.12';
+var CACHE_NAME = 'all-v1.1.13';
 // keep-sorted
 var urlsToCache = [
   '/',
@@ -14,6 +14,8 @@ var urlsToCache = [
   '/img/logo-biblioteca.png',
   '/img/logo-ciba.png',
   '/img/logo.svg',
+  // Explicitly cache index.html so it works if users access /index.html directly
+  '/index.html',
   '/js/script.js',
   '/third_party/Sortable.min.js',
 ];
