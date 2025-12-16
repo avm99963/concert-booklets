@@ -1,5 +1,7 @@
 var bookletNames = [
   'concert-nadal-15122025-1830',
+  'concert-nadal-16122025-1730',
+  'concert-nadal-16122025-2030',
 ];
 
 var interval = null;

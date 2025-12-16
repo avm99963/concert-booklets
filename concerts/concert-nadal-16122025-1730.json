@@ -1,0 +1,212 @@
+{
+  "codename": "concert-nadal-16122025-1730",
+  "title": "CONCERT DE NADAL",
+  "subtitle": "Dimarts 16 de desembre de 2025 a les 17:30 hores - Auditori Escola de Música \"Musicaula\"",
+  "begins": 1765901700,
+  "ends": 1765908000,
+  "hasTimes": false,
+  "showTitle": true,
+  "songs": [
+    {
+      "title": "El noi de la Mare",
+      "author": "Popular catalana",
+      "performers": [
+        {
+          "instrument": "Veus",
+          "names": [
+            "Carmen Maria Espejo",
+            "Carla Moreno"
+          ]
+        },
+        {
+          "instrument": "Piano",
+          "names": [
+            "Júlia Ndanda"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "El pastoret",
+      "author": "Popular francesa",
+      "performers": [
+        {
+          "instrument": "Piano",
+          "names": [
+            "Wesley Alves",
+            "Nil López"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Old McDonald",
+      "author": "Popular nordamericana",
+      "performers": [
+        {
+          "instrument": "Piano",
+          "names": [
+            "Tesi Osuna",
+            "Gabriel Sebastiani"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "They don't care about us",
+      "author": "Michael Jackson",
+      "performers": [
+        {
+          "instrument": "Violí",
+          "names": [
+            "Dana Alexeeva"
+          ]
+        },
+        {
+          "instrument": "Piano",
+          "names": [
+            "Carmen Vilanova"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Dos trocitos de madera",
+      "author": "Luis Szaran",
+      "performers": [
+        {
+          "instrument": "Violí",
+          "names": [
+            "Ainhoa Franco"
+          ]
+        },
+        {
+          "instrument": "Piano",
+          "names": [
+            "Carmen Vilanova"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Quan les oques van al camp",
+      "author": "Popular",
+      "performers": [
+        {
+          "instrument": "Violí",
+          "names": [
+            "Laria Fernández",
+            "Carmen Vilanova"
+          ]
+        },
+        {
+          "instrument": "Piano",
+          "names": [
+            "Carme Martínez"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Les campanes",
+      "author": "Popular",
+      "performers": [
+        {
+          "instrument": "Piano",
+          "names": [
+            "Tesi Osuna",
+            "Laia Pérez"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The banjo picker",
+      "author": "Popular",
+      "performers": [
+        {
+          "instrument": "Piano",
+          "names": [
+            "Tesi Osuna",
+            "Neizan Salas"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Santa Nit",
+      "author": "Franz Grüber",
+      "performers": [
+        {
+          "instrument": "Violins",
+          "names": [
+            "Pau Altimira",
+            "Isabella Burlacu",
+            "Kendal Cabrera",
+            "Martina Herrero",
+            "Pau López",
+            "Natxo Morales"
+          ]
+        },
+        {
+          "instrument": "Piano",
+          "names": [
+            "Carme Martínez"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Jingle Bell Rock",
+      "author": "Bobby Helms",
+      "performers": [
+        {
+          "instrument": "Violí",
+          "names": [
+            "Samantha Chumpitaz",
+            "Kiara Rodríguez"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Golden",
+      "author": "Huntrix",
+      "performers": [
+        {
+          "instrument": "Violí",
+          "names": [
+            "Samantha Chumpitaz"
+          ]
+        },
+        {
+          "instrument": "Piano",
+          "names": [
+            "Carmen Vilanova"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Siempre es Navidad junto a ti",
+      "author": "Edurne",
+      "performers": [
+        {
+          "instrument": "Veus",
+          "names": [
+            "María Alfonso",
+            "Carlota de Haro",
+            "Nayala Ruiz",
+            "Leire Sabaté"
+          ]
+        },
+        {
+          "instrument": "Guitarra",
+          "names": [
+            "Cristian Orozco"
+          ]
+        }
+      ]
+    }
+  ]
+}

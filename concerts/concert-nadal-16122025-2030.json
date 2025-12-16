@@ -1,0 +1,125 @@
+{
+  "codename": "concert-nadal-16122025-2030",
+  "title": "Concert de Nadal",
+  "subtitle": "Dimarts 16 de desembre de 2025 a les 20:30 hores - Auditori de l'Escola de Música \"Musicaula\"",
+  "begins": 1765912500,
+  "ends": 1765922400,
+  "hasTimes": false,
+  "showTitle": true,
+  "songs": [
+    {
+      "title": "Largo de la Simfonia del Nou Mon",
+      "author": "Dvorak",
+      "performers": [
+        {
+          "instrument": "Violí",
+          "names": [
+            "Marc Chaves",
+            "Raúl Ramírez"
+          ]
+        },
+        {
+          "instrument": "Piano",
+          "names": [
+            "Carmen Vilanova"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Al·leluia",
+      "author": "Leonard Cohen",
+      "performers": [
+        {
+          "instrument": "Violí",
+          "names": [
+            "Kiara Rodríguez"
+          ]
+        },
+        {
+          "instrument": "Piano",
+          "names": [
+            "Carmen Vilanova"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The entertainer",
+      "author": "Scott Joplin",
+      "performers": [
+        {
+          "instrument": "Piano",
+          "names": [
+            "Júlia Ndanda",
+            "Iker Serrano"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "All I Want For Christmas Is You",
+      "author": "Mariah Carey",
+      "performers": [
+        {
+          "instrument": "Veus",
+          "names": [
+            "Laia Guerrero",
+            "Luz Valenzuela"
+          ]
+        },
+        {
+          "instrument": "Piano",
+          "names": [
+            "Carmen Vilanova"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Rock Around the Christmas Tree",
+      "author": "Johnny Marks",
+      "performers": [
+        {
+          "instrument": "Guitarres",
+          "names": [
+            "Raul García",
+            "Félix González"
+          ]
+        },
+        {
+          "instrument": "Bateria",
+          "names": [
+            "Xavi Martín"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Feliz Navidad",
+      "author": "José Feliciano",
+      "performers": [
+        {
+          "instrument": "Guitarra",
+          "names": [
+            "Juan Garrido",
+            "Benito Martos",
+            "Carmen Rodríguez"
+          ]
+        },
+        {
+          "instrument": "Baix",
+          "names": [
+            "Miguel Núñez"
+          ]
+        },
+        {
+          "instrument": "Bateria",
+          "names": [
+            "Irene Núñez"
+          ]
+        }
+      ]
+    }
+  ]
+}
