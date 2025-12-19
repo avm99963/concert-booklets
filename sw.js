@@ -1,10 +1,11 @@
-var CACHE_NAME = 'all-v1.1.21';
+var CACHE_NAME = 'all-v1.1.22';
 // keep-sorted
 var urlsToCache = [
   '/',
   '/concerts/concert-nadal-15122025-1830.json',
   '/concerts/concert-nadal-16122025-1730.json',
   '/concerts/concert-nadal-16122025-2030.json',
+  '/concerts/concert-nadal-19122025-1830.json',
   '/css/styles.css',
   '/editor/editor.css',
   '/editor/editor.html',

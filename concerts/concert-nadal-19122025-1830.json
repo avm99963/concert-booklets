@@ -1,0 +1,87 @@
+{
+  "codename": "concert-nadal-19122025-1830",
+  "title": "CONCERT DE NADAL",
+  "subtitle": "Divendres 19 de desembre de 2025 a les 18:30 hores - Auditori Escola de Música \"Musicaula\"",
+  "begins": 1766164500,
+  "ends": 1766181600,
+  "hasTimes": false,
+  "showTitle": true,
+  "songs": [
+    {
+      "title": "Jingle Bells",
+      "author": "James Lord Pierpont",
+      "performers": [
+        {
+          "instrument": "Piano",
+          "names": [
+            "Carme Martínez",
+            "Ying Xu"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Cançó de bressol",
+      "author": "Johannes Brahms",
+      "performers": [
+        {
+          "instrument": "Piano",
+          "names": [
+            "Máximo Peña",
+            "Mauricio Peña"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The banjo picker",
+      "author": "Popular",
+      "performers": [
+        {
+          "instrument": "Piano",
+          "names": [
+            "Carme Marínez",
+            "Leo Soria"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Oda a l'alegria",
+      "author": "Ludwig van Beethoven",
+      "performers": [
+        {
+          "instrument": "Piano",
+          "names": [
+            "Carme Martínez",
+            "Raquel Valls"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Jingle Bells",
+      "author": "James Lord Pierpont",
+      "performers": [
+        {
+          "instrument": "Violí",
+          "names": [
+            "Neizan Salas"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Feliz Navidad",
+      "author": "José Feliciano",
+      "performers": [
+        {
+          "instrument": "Violí",
+          "names": [
+            "Loida Tajahuerce"
+          ]
+        }
+      ]
+    }
+  ]
+}
