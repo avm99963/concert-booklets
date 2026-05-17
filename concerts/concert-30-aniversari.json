@@ -1,0 +1,411 @@
+{
+  "codename": "concert-30-aniversari",
+  "title": "Concert 30 aniversari de l'Escola de Música Musicaula",
+  "subtitle": "Teatre Sagarra",
+  "hasTimes": false,
+  "showTitle": true,
+  "songs": [
+    {
+      "title": "Concert per a piano i orquestra en La menor Op. 16, I. \"Allegro molto moderato\"",
+      "author": "Edvard Grieg",
+      "performers": [
+        {
+          "instrument": "Piano",
+          "names": [
+            "Carmen Vilanova"
+          ]
+        },
+        {
+          "instrument": "Orquestra Beethoven de Vozes",
+          "names": []
+        },
+        {
+          "instrument": "Director d'Orquestra",
+          "names": [
+            "Ismael González"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Viva la Vida",
+      "author": "Coldplay",
+      "performers": [
+        {
+          "instrument": "Veus",
+          "names": [
+            "Cor d'alumnes de Cant de Musicaula i Cor de Vozes"
+          ]
+        },
+        {
+          "instrument": "Piano",
+          "names": [
+            "Júlia Ndanda",
+            "Junhao Liu"
+          ]
+        },
+        {
+          "instrument": "Guitarres",
+          "names": [
+            "Victor Martín",
+            "Paula Alcaraz",
+            "Jan Torres"
+          ]
+        },
+        {
+          "instrument": "Bateria",
+          "names": [
+            "Nahia Alcalde"
+          ]
+        },
+        {
+          "instrument": "Baix",
+          "names": [
+            "Gabi Barquero"
+          ]
+        },
+        {
+          "instrument": "Orquestra Beethoven de Vozes",
+          "names": []
+        },
+        {
+          "instrument": "Director d'Orquestra",
+          "names": [
+            "Ismael González"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Palabra de Federico, Música de García Lorca",
+      "author": "",
+      "performers": [
+        {
+          "instrument": "Poema",
+          "names": [
+            "Romance de la luna, luna (Del Romancero gitano de Federico García Lorca)"
+          ]
+        },
+        {
+          "instrument": "Música",
+          "names": [
+            "Nana de Sevilla (Harmonització Federico García Lorca)"
+          ]
+        },
+        {
+          "instrument": "Rapsoda",
+          "names": [
+            "Petry Jiménez"
+          ]
+        },
+        {
+          "instrument": "Piano",
+          "names": [
+            "Carme Martínez"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Reconstruccions",
+      "author": "",
+      "performers": [
+        {
+          "instrument": "Poema",
+          "names": [
+            "Cossos d'aire"
+          ]
+        },
+        {
+          "instrument": "Música",
+          "names": [
+            "Romança sense paraules Núm. 9 en Mi Major, 9 Op. 30/3. Félix Mendelssohn"
+          ]
+        },
+        {
+          "instrument": "Autor i lectura",
+          "names": [
+            "Rodolfo del Hoyo"
+          ]
+        },
+        {
+          "instrument": "Piano",
+          "names": [
+            "Carme Martínez"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Vals de les flors, del ballet Trencanous",
+      "author": "Piotr Ilich Txaikovski",
+      "performers": [
+        {
+          "instrument": "Ballet Dancing Human",
+          "names": []
+        },
+        {
+          "instrument": "Directora Ballet",
+          "names": [
+            "Sílvia Pallisera"
+          ]
+        },
+        {
+          "instrument": "Piano",
+          "names": [
+            "Carme Martínez",
+            "Carmen Vilanova"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Terra",
+      "author": "Tanxugueiras",
+      "performers": [
+        {
+          "instrument": "Veus",
+          "names": [
+            "Kiara Rodríguez",
+            "Yrina Rodrigues",
+            "Clara Gjyzari"
+          ]
+        },
+        {
+          "instrument": "Piano",
+          "names": [
+            "Tesi Osuna"
+          ]
+        },
+        {
+          "instrument": "Guitarres",
+          "names": [
+            "Nerea Martínez",
+            "Daniel Garrido",
+            "Adrià García",
+            "Xavi Martín"
+          ]
+        },
+        {
+          "instrument": "Baix",
+          "names": [
+            "Miguel Núñez"
+          ]
+        },
+        {
+          "instrument": "Bateria",
+          "names": [
+            "Lucía Fernández"
+          ]
+        },
+        {
+          "instrument": "Caixó",
+          "names": [
+            "Nahia Alcalde"
+          ]
+        },
+        {
+          "instrument": "Panderetairas de Airiños Da Nosa Galicia",
+          "names": []
+        }
+      ]
+    },
+    {
+      "title": "Solo pienso en ti",
+      "author": "Víctor Manuel",
+      "performers": [
+        {
+          "instrument": "Veus",
+          "names": [
+            "Santi Chumpitaz",
+            "Cristian Orozco"
+          ]
+        },
+        {
+          "instrument": "Cor",
+          "names": [
+            "Alumnes de Cant de Musicaula"
+          ]
+        },
+        {
+          "instrument": "Piano",
+          "names": [
+            "Daniela de Oliveira",
+            "Manel Giménez"
+          ]
+        },
+        {
+          "instrument": "Violins",
+          "names": [
+            "Samantha Chumpitaz",
+            "Raul Ramírez",
+            "Raquel López",
+            "Kiara Rodríguez",
+            "Carmen Vilanova"
+          ]
+        },
+        {
+          "instrument": "Guitarres",
+          "names": [
+            "Juan Garrido",
+            "Benito Martos",
+            "Carmen Rodríguez",
+            "Xavi Martín"
+          ]
+        },
+        {
+          "instrument": "Baix",
+          "names": [
+            "Miguel Núñez"
+          ]
+        },
+        {
+          "instrument": "Bateria",
+          "names": [
+            "Irene Núñez"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "La puerta violeta",
+      "author": "Rozalén",
+      "performers": [
+        {
+          "instrument": "Veus",
+          "names": [
+            "Cor d'alumnes de Cant de Musicaula"
+          ]
+        },
+        {
+          "instrument": "Piano",
+          "names": [
+            "Joel Romero"
+          ]
+        },
+        {
+          "instrument": "Guitarres",
+          "names": [
+            "Irene Núñez",
+            "Carmen Rodríguez",
+            "Nerea Martínez",
+            "Xavi Martín"
+          ]
+        },
+        {
+          "instrument": "Baix",
+          "names": [
+            "Miguel Núñez"
+          ]
+        },
+        {
+          "instrument": "Bateria",
+          "names": [
+            "Mario Camargo"
+          ]
+        },
+        {
+          "instrument": "Caixó",
+          "names": [
+            "Lucía Fernández"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Llença't",
+      "author": "Lax'n'Busto",
+      "performers": [
+        {
+          "instrument": "Veus",
+          "names": [
+            "Cor d'alumnes de Musicaula i Coral de l'Heura"
+          ]
+        },
+        {
+          "instrument": "Piano",
+          "names": [
+            "Iker Serrano"
+          ]
+        },
+        {
+          "instrument": "Guitarres",
+          "names": [
+            "Irene Núñez",
+            "Adolfo Aranda",
+            "Xavi Martín"
+          ]
+        },
+        {
+          "instrument": "Bateria",
+          "names": [
+            "Júlia Ndanda"
+          ]
+        },
+        {
+          "instrument": "Baix",
+          "names": [
+            "Gabi Barquero"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sempre t'esperarà",
+      "author": "Escola de Música \"Musicaula\"",
+      "performers": [
+        {
+          "instrument": "Veus",
+          "names": [
+            "Cor d'alumnes de Musicaula",
+            "Coral de l'Heura",
+            "Cor de Vozes"
+          ]
+        },
+        {
+          "instrument": "Piano",
+          "names": [
+            "Adrià Vilanova"
+          ]
+        },
+        {
+          "instrument": "Saxòfons",
+          "names": [
+            "Marc Baena",
+            "Luis Cantú"
+          ]
+        },
+        {
+          "instrument": "Guitarres",
+          "names": [
+            "Víctor Martín",
+            "Adolfo Aranda",
+            "Xavi Martín"
+          ]
+        },
+        {
+          "instrument": "Baix",
+          "names": [
+            "Joel Serra"
+          ]
+        },
+        {
+          "instrument": "Bateria",
+          "names": [
+            "Oriol Macías"
+          ]
+        },
+        {
+          "instrument": "Percussió",
+          "names": [
+            "Lucía Fernández (Claves)",
+            "Mario Camargo (Shakers)",
+            "Nahia Alcalde (Caixó)"
+          ]
+        }
+      ]
+    }
+  ],
+  "begins": 1779030000,
+  "ends": 1778184000
+}

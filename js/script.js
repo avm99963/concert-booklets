@@ -3,6 +3,7 @@ var bookletNames = [
   'concert-nadal-16122025-1730',
   'concert-nadal-16122025-2030',
   'concert-nadal-19122025-1830',
+  'concert-30-aniversari',
 ];
 
 var interval = null;
@@ -59,7 +60,7 @@ function songElement(song, hasTimes) {
     span.classList.add('instrument');
     span.textContent = performer.instrument;
 
-    var people = document.createTextNode(': ' + performer.names.join(', '));
+    var people = performer.names.length > 0 ? document.createTextNode(': ' + performer.names.join(', ')) : '';
 
     item.append(span, people);
     performers.append(item);
